@@ -1,7 +1,7 @@
-# 🤖 Brizas-bot 🤖
+# ☄️✨𝑩𝑹⃟𝑰𝒁𝑨𝑺 𝑶⃟𝑹𝑰𝑶𝑵✨☄️
 <h1 align="center">
     <p>
-        <img src= "https://i.imgur.com/sm6LGkk.gif">
+        <img src= "https://thumbs.gfycat.com/ComplexSourKakapo-size_restricted.gif">
     </p>
     <p>
         <a href="https://github.com/ianmsfvenom"><img title="Author"    src="https://img.shields.io/badge/Author-Briz4loka-purple.svg?style=for-the-badge&logo=github"></a>
@@ -16,7 +16,8 @@
 
 # 🤓 Índice
 - [O que é?](#🤔-O-que-é-?)
-- [Instalação](#⬇️-Instalação)
+- [Logando e deslogando do wpp web](#🌐-Logando-e-deslogando-do-wpp-web)
+- [Instalação pleo windows](#⬇️-Instalação-pelo-windows)
 - [Mudando as configurações](#🙋‍♂️-Como-mudar-as-configurações-do-bot)
 - [Donate](#🥺-Donate)
 - [Contatos](#🤝-Contato)
@@ -24,41 +25,68 @@
 
 # 🤔 O que é ?
 
-O Brizas-bot é um bot com a base do [MhankBars](https://github.com/MhankBarBar/termux-wabot) que foi modificado e adicionado diversos comandos que foram desenvolvido principalmente para satisfazer o povo brasileiro, com gerador de cidadão, CPF, e CC, e muito mais, em breve será lançado uma base traduzida e com alguns comandos do Brizas-bot para os usuarios poderem editar com total liberdade 
+O Brizas bot é um bot com a base do [MhankBars](https://github.com/MhankBarBar/termux-wabot) com api principal do wpp web feita pelo [adiwajshing](https://github.com/adiwajshing/Baileys) e sua equipe. O bot foi modificado e adicionado diversos comandos que foram desenvolvido principalmente para satisfazer o povo brasileiro, com gerador de cidadão, CPF, e CC, e muito mais. Se inscreva no meu canal do [Youtube](https://www.youtube.com/channel/UCK_e0brrGXeXk-zg2NFbJTg) para saber mais sobre o Brizas Orion e de como instalá-lo
 
 ---
 
 
-# ⬇️ Instalação
+# ⬇️ Instalação pelo windows
 
-[Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
+Programas:
+---
+
+Ffmpeg:
+https://ffmpeg.org/download.html
+
+Imagemagick:
+https://imagemagick.org/script/download.php
+
+Libwebp:
+https://developers.google.com/speed/webp/download?hl=pt
+
+Tesseract: https://tesseract-ocr.github.io/tessdoc/Downloads.html
+
+Nodejs:
+https://nodejs.org/en/download/
+
+Ruby:
+https://rubyinstaller.org
+
+Terminal
+---
 
 ```
 git clone https://github.com/ianmsfvenom/Brizas-bot
 cd Brizas-bot
 bash install.sh
 npm install
+npm i pm2 -g
 
 (iniciar o bot manualmente)
 npm start
 
-(reiniciar o bot automaticamente em caso de crash)
-sh start.sh
-
-(ou)
+(iniciar o bot automaticamente em caso de crash)
 pm2 start index.js
 
 ```
 ---
-# 🙋‍♂️ Como mudar as configurações do bot
+# 🌐 Logando e deslogando do wpp web
 ```
-cd
 cd Brizas-bot
-apt install nano
-nano config.js
+node reset.js
 
+(para logar de novo)
+node index.js
+```
+
+---
+# 🙋‍♂️ Como mudar as configurações do bot
+
+Abra o arquivo config.js com um editor de texto e mude as configurações
+```
 (ATENÇÃO MUDE APENAS OS NUMEROS ENTRE OS ACENTOS, NÃO REMOVA O @s.whatsapp.net)
 ```
+---
 # 😘 Créditos
 
 <h1>
@@ -84,24 +112,28 @@ Bom, esse bot não teria sido feito sem a base do, [MhankBars](https://github.co
 
 ---
 
-# 🥺 Donate
-[Paypal](https://www.paypal.com/donate/?hosted_button_id=QQ4MFP2AZV9TW)
-
-Pix
-
-<img src="https://i.imgur.com/891Ah3r.jpeg" width="300" >
-
----
-
 ## <img src="https://media.tenor.com/images/3c73ab1a2d871e65d0435c28f72f2944/tenor.gif" width="35px"> Contribuição
 
 [KillovSky](https://github.com/KillovSky/iris)
 
 [Gabriel](wa.me/+5511946817667)
 
-[Lucass](https://luc4rio.herokuapp.com/api)
-
 [Thoth](wa.me/+55d11930758170)
+
+[Italuh](https://github.com/italuH)
+
+[Adiwajshing](https://github.com/adiwajshing)
+
+Agradeço a esses gostosos por ter me ajudado a adicionar novos comandos e por ter feito e por fazer o brizas orion o um dos maiores bot de wpp 😘
+
+---
+
+# 🥺 Donate
+[Paypal](https://www.paypal.com/donate/?hosted_button_id=QQ4MFP2AZV9TW)
+
+Pix
+
+<img src="https://i.imgur.com/891Ah3r.jpeg" width="300" >
 
 ---
 # 🤝 Contato
