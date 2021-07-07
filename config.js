@@ -4,11 +4,25 @@ const ownerNumber = ["557187645787@s.whatsapp.net"]
 const OriginalOwner = '557187645787' 
 // mude para seu numero
 
-const gimagenotregister = true
+var gimagenotregister = false
 // quando não há comando registrado o bot procura no google image
 
-const sgooglenotregister = true
+var sgooglenotregister = false
 // quando não há comando registrado o bot procura uma pesquisa no google
+
+const antinewchatmsg = 'O anti chat novo está ativado e você não é meu proprietário, logo será bloqueado'
+//mensagem do antinewchat
+
+const urlaudiomenu = 'https://b.top4top.io/m_19923zx481.mp3'
+// link direto da url do audio
+
+const antipvmsg = '*🚫 PV BLOQUEADO 🚫*'
+//mensagem do antipv
+
+const limitqnt = 9999
+
+const delayantispamcmd = 3
+//tempo de delay do antispamcmd (medido por segundos)
 
 const msgwelcomeimg = (numero, groupname) => {
     return `Seja bem-vindo ${numero}\n\nEscreve ${prefix}menu para lista de comandos`
@@ -22,16 +36,32 @@ const byemsgimg = (numero, groupname) => {
 //Texto de despedidas na imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
 
-const menumsgimg = (numero, groupname) => {
-    return `Seja bem-vindo ${numero}\n\nAo menu do Brizas-bot`
+const menumsgimg = (numero, groupname, battery) => {
+    return `MENU DO BRIZAS-BOT COM 434 COMANDOS, BATERIA: ${battery}`
 }
 //Texto no menu da imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
 
-const apikeyimgbb = '1eb4ea79f7e4eef8241d5bdb054adc01'
+const titlemenumsgimg = 'BEM-VINDO'
+//Título no menu da imagem quando welcome esta ativado
+//Obs: não coloque o texto longo para a imagem não sumir
+
+const backgroundmenuimg = `https://i.imgur.com/tVKFNFk.png`
+//Link direto da imagem de fundo TAMANHO RECOMENDADO: 1280x720
+//Obs: não coloque o texto longo para a imagem não sumir
+
+const backgroundwelcomeimg = `https://i.imgur.com/tVKFNFk.png`
+//Link direto da imagem de fundo da boas-vindas TAMANHO RECOMENDADO: 1280x720
+//Obs: não coloque o texto longo para a imagem não sumir
+
+const backgroundbyeimg = `https://i.imgur.com/2TCj9ri.jpg`
+//Link direto da imagem de fundo das despedidas TAMANHO RECOMENDADO: 1280x720
+//Obs: não coloque o texto longo para a imagem não sumir
+
+const apikeyimgbb = 'c9cf132756510ad171587fb5a5a0389f'
 // sua key do imgbb para ativar o antiporn e mais alguns comando que necessita de baixar imagem
 
-const cr = '𝐁𝐑𝐈𝐙𝐀𝐒 𝐁𝐎𝐓\n' 
+const cr = '☄️✨𝑩𝑹⃟𝑰𝒁𝑨𝑺 𝑶⃟𝑹𝑰𝑶𝑵✨☄️\n' 
 // texto do simbolo de verificado
 
 const prefix = '!' 
@@ -141,6 +171,15 @@ const vcard = 'BEGIN:VCARD\n'
 
 
 // Nem ouse mexer aqui se n quiser que de erro
+exports.limitqnt = limitqnt
+exports.urlaudiomenu = urlaudiomenu
+exports.delayantispamcmd = delayantispamcmd
+exports.antinewchatmsg = antinewchatmsg
+exports.antipvmsg = antipvmsg
+exports.backgroundbyeimg = backgroundbyeimg
+exports.backgroundwelcomeimg = backgroundwelcomeimg
+exports.backgroundmenuimg = backgroundmenuimg
+exports.titlemenumsgimg = titlemenumsgimg
 exports.menumsgimg = menumsgimg
 exports.gimagenotregister = gimagenotregister
 exports.sgooglenotregister = sgooglenotregister
